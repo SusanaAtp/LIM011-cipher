@@ -6,9 +6,80 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <div class="container">
+
+<!-- Primera vista -->
+      <div id="bienvenidos">
+        <h1>BIENVENIDO</h1>
+        <p> HERMES CODE, es un centro de mensajería encriptada para mayor protección en la distribución de mensajería
+          instantánea entre operadores de seguridad. <br>Este es un mensaje de protección de mensajería de acuerdo a la
+          privacidad y veracidad de la políticas de HERMES.</br></p>
+        <button id=btn1>De acuerdo</button>
+      </div>
+<!-- Segunda Vista -->
+      <div id="ingresar">
+        <h2>ID de HERMES:</h2>
+        <input type="text" id="persona" name="vacio">
+        <button id="btn2" class="btns">Seguir</button>
+      </div>
+<!-- Tercera vista -->
+      <div class="container2" id="container2">
+        <h10><button id="codigo">CODIFICAR</button></h10>
+        <h11><button id="descifrado">DESCIFRAR</button></h11>
+
+        <!-- Vista ENCRIPTAR -->
+             <div id="encriptar">
+               <header2 class="header">ENCRIPTAR</header2><br>
+               <p2>Pon tu mensaje aquí:</p2>
+               <textarea id="codetext" name="vacio" rows="10" cols="40" placeholder="Escribe aquí"></textarea>
+        <!-- Botón ENCRIPTAR -->
+               <label>
+               <button id="code">flecha</button>
+               <p3>ENCRIPTAR</p3>
+               </label>
+        <!-- Colocar el offset en codificar-->
+               <p4 class="seguridad">Nivel de Seguridad</p4>
+               <input type="text" id="ofstcode" name="vacio">
+        <!-- Mensaje encriptado -->
+               <p5>Tu mensaje encriptado:</p5>
+               <textarea id="codeado" name="vacio" rows="10" cols="40" placeholder="Escribe aquí"></textarea>
+               <button id="sendMsg" class="btns">ENVIAR MENSAJE</button>
+            </div>
+
+          <!--Vista copiar mensaje -->
+            <div id="container3" class="container3">
+
+                <h3 class="copy">COPIA ESTE MENSAJE</h3>
+                <p6>Hola <div id="user"></div>quiere enviarte un mensaje encriptado en cifra <div id="ftr"></div></p6>
+                <p7>[Copia este mensaje]<div id="msg"></div>[Fin]</p7>
+
+            </div> <!--Fin de vista copiar mensaje-->
+
+          <!--Vista DESCIFRAR mensaje -->
+            <div id="descifrar">
+              <header1 class="header">DESCIFRAR</header1><br>
+              <p2>Pega tu mensaje aquí:</p2>
+              <textarea id="decodear" name="vacio" rows="10" cols="40" placeholder="Pega aquí"></textarea>
+
+          <!-- Botón DESCIFRAR -->
+              <label>
+                <button id="decode">flecha</button>
+                <p3>DESCIFRAR</p3>
+              </label>
+          <!-- Colocar el offset DECODIFICAR -->
+              <p4 class="seguridad">Nivel de Seguridad</p4>
+              <input type="text" name="vacio">
+          <!-- Mensaje decodificado -->
+              <p5>Tu mensaje encriptado:</p5>
+              <textarea id="decodetext" name="vacio" rows="10" cols="40" placeholder="Escribe aquí"></textarea>
+
+            </div> <!-- Fin de DESCIFRAR-->
+
+        <button id="salir" class="btns">SALIR</button> <!--Botón salir-->
+
+      </div> <!--fin de tercera vista-->
+    </div><!--Fin del container principal-->
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
