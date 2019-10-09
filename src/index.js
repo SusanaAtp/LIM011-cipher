@@ -72,3 +72,10 @@ reset.forEach((element)=> {
     let n_offset = document.getElementById('ofstcode');
   document.getElementById('codeado').innerHTML = cipher.encode(codificar.value, n_offset.value);
 });
+
+const botonDescifrar = document.getElementById('decode');
+  botonDescifrar.addEventListener('click', ()=>{
+  let decodificar = document.getElementById('decodetext');
+  let n_offset2 = document.getElementById('ofstdecode');
+document.getElementById('decodeado').innerHTML = cipher.decode(decodificar.value, n_offset2.value);
+});
