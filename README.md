@@ -1,4 +1,19 @@
-# Cifrado César
+## HERMES code
+_¿Qué pasaría si uno de los agentes de seguridad de HERMES envía información clasificada entre sus compañeros y en un accidente pierde su celular?_
+_Toda esa información se perdería y llegaría a manos de personas inescrupulosas, quienes podrían atentar contra la seguridad y confidencialidad de los datos de traslado y monitero de dinero._
+
+Ante este posible problema, se crea **HERMES code**, un aplicativo web con el propósito de enviar mensajería encriptada con total seguridad entre agentes de seguridad. La cual solo es usable entre trabajadores de HERMES, ya que necesita un ingreso con su código personal. La mensajería es totalmente segura y una vez encriptado el mensaje, tiene la opción de copiar y enviarlo vía Whatsapp o correo electrónico.
+
+## UX
+### Usuario
+ * i. Trabajadores y agentes de seguridad de HERMES
+ * ii. **HERMES code** será usado en mensajes de alta importancia entre los usuarios, brindando una mejor seguridad y confidencialidad para la información. 
+ * iii. Foto
+ * iv. Agregar la palabra Nivel de Seguridad. En lugar de Cifra
+ * v. Prototipo final. 
+
+
+<!-- # Cifrado César
 
 ## Índice
 
@@ -283,4 +298,47 @@ Organización del Trabajo:
 * [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
 * [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
-  poco a lo largo del -_bootcamp_.
+  poco a lo largo del -_bootcamp_. -->
+
+
+ ## Objetivos de aprendizaje Cifrado Cesar
+ 
+A continuación te presentamos los objetivos de aprendizaje de este proyecto. Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplicar** en tu proyecto.
+
+### UX
+
+- [X] Diseñar la aplicación pensando y entendiendo al usuario.
+- [X] Crear prototipos para obtener feedback e iterar.
+- [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+
+### HTML y CSS
+
+- [X] Uso correcto de HTML semántico.
+- [X] Uso de selectores de CSS.
+- [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+
+### DOM
+
+- [X] Uso de selectores del DOM.
+- [X] Manejo de eventos del DOM.
+- [X] Manipulación dinámica del DOM.
+
+### Javascript
+
+- [X] Manipulación de strings.
+- [ ] Uso de condicionales (if-else | switch).
+- [ ] Uso de bucles (for | do-while).
+- [X] Uso de funciones (parámetros | argumentos | valor de retorno).
+- [ ] Declaración correcta de variables (const & let).
+- [ ] Uso de ES Modules (import | export).
+
+### Testing
+- [ ] Testeo de tus funciones.
+
+### Git y GitHub
+- [ ] Comandos de git (add | commit | pull | status | push).
+- [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages).
+
+### Buenas prácticas de desarrollo
+- [ ] Organizar y dividir el código en módulos (Modularización).
+- [X] Uso de identificadores descriptivos (Nomenclatura | Semántica).

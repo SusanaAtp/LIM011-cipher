@@ -1,81 +1,87 @@
-ingresar.style.display="none";
-container2.style.display="none";
-container3.style.display="none";
-descifrar.style.display="none";
-bienvenidos.style.display="block";
-encriptar.style.display="none";
-
+/* eslint-disable no-alert */
+/* eslint-disable no-undef */
+const ingresar = document.getElementById('ingresar');
+const bienvenidos = document.getElementById('bienvenidos');
+const container2 = document.getElementById('container2');
+const container3 = document.getElementById('container3');
+const encriptar = document.getElementById('encriptar');
+const descifrar = document.getElementById('descifrar');
+const salir = document.getElementById('salir');
 // Primer botón
-const primerBoton = document.getElementById("btn1");
-  primerBoton.addEventListener('click',()=>{
-  ingresar.style.display="block";
-const inicio = document.getElementById('bienvenidos').style.display="none";
-  encriptar.style.display="none";
+const primerBoton = document.getElementById('btn1');
+primerBoton.addEventListener('click', () => {
+  ingresar.classList.remove('ocultar');
+  bienvenidos.classList.add('ocultar');
 });
 
 // Segundo botón
 const segundoBoton = document.getElementById('btn2');
-  segundoBoton.addEventListener('click', ()=>{
-let usuario = document.getElementById('persona').value;
-// if (usuario == "") {
-  // alert("Ingresa tu ID, por favor")
-// } else {
-  const container2 = document.getElementById('container2').style.display="block";
-    encriptar.style.display="block";
-    ingresar.style.display = "none";
-// }
+segundoBoton.addEventListener('click', () => {
+  const usuario = document.getElementById('persona').value;
+  if (usuario === '') {
+    alert('Ingresa tu ID, por favor');
+  } else {
+    container2.classList.remove('ocultar');
+    encriptar.classList.remove('ocultar');
+    salir.classList.remove('ocultar');
+    ingresar.classList.add('ocultar');
+  }
 });
 
 // Vista codificar
-const codigo = document.getElementById('codigo');
-  codigo.addEventListener('click', ()=>{
-    encriptar.style.display="block";
-    descifrar.style.display="none";
+const vistaCodigo = document.getElementById('codigo');
+vistaCodigo.addEventListener('click', () => {
+  encriptar.classList.remove('ocultar');
+  descifrar.classList.add('ocultar');
 });
 
 // Vista copiar mensaje
 const enviar = document.getElementById('sendMsg');
-  enviar.addEventListener('click', ()=>{
-  document.getElementById('container3').style.display="block";
-  usuario = document.getElementById('persona').value;
+enviar.addEventListener('click', () => {
+  container3.classList.remove('ocultar');
+  const usuario = document.getElementById('persona').value;
   document.getElementById('user').innerHTML = usuario;
   const ofst = document.getElementById('ofstcode').value;
   document.getElementById('ftr').innerHTML = ofst;
+  const mensaje = document.getElementById('codeado').value;
+  document.getElementById('msg').innerHTML = mensaje;
 });
 
 // Vista descifrar
-const descifrado = document.getElementById('descifrado');
-  descifrado.addEventListener('click', ()=>{
-    encriptar.style.display="none";
-    descifrar.style.display="block";
-    container3.style.display="none";
+const vistaDescifrado = document.getElementById('descifrado');
+vistaDescifrado.addEventListener('click', () => {
+  encriptar.classList.add('ocultar');
+  descifrar.classList.remove('ocultar');
+  container3.classList.add('ocultar');
 });
 
 // Boton salir ambas vistas
-const salir= document.getElementById('salir');
-  salir.addEventListener('click', ()=>{
-    bienvenidos.style.display="block";
-    container2.style.display="none";
-    descifrar.style.display="none";
-    container3.style.display="none";
-const reset = document.querySelectorAll('[name="vacio"]');
-reset.forEach((element)=> {
-  element.value = ""
-})
+salir.addEventListener('click', () => {
+  bienvenidos.classList.remove('ocultar');
+  container2.classList.add('ocultar');
+  container3.classList.add('ocultar');
+  descifrar.classList.add('ocultar');
+  const reset = document.querySelectorAll('[name="vacio"]');
+  reset.forEach((element) => {
+    // eslint-disable-next-line no-param-reassign
+    element.value = '';
   });
+});
 
 // Funcion codificar mensaje
 
-  const botonCifrar = document.getElementById('code');
-    botonCifrar.addEventListener('click', ()=>{
-    let codificar = document.getElementById('codetext');
-    let n_offset = document.getElementById('ofstcode');
-  document.getElementById('codeado').innerHTML = cipher.encode(codificar.value, n_offset.value);
+const botonCifrar = document.getElementById('code');
+botonCifrar.addEventListener('click', () => {
+  const codificar = document.getElementById('codetext');
+  const nOffset = document.getElementById('ofstcode');
+  document.getElementById('codeado').value = cipher.encode(codificar.value, nOffset.value);
 });
 
+// Funcion descifrar mensaje
+
 const botonDescifrar = document.getElementById('decode');
-  botonDescifrar.addEventListener('click', ()=>{
-  let decodificar = document.getElementById('decodetext');
-  let n_offset2 = document.getElementById('ofstdecode');
-document.getElementById('decodeado').innerHTML = cipher.decode(decodificar.value, n_offset2.value);
+botonDescifrar.addEventListener('click', () => {
+  const decodificar = document.getElementById('decodetext');
+  const nOffset2 = document.getElementById('ofstdecode');
+  document.getElementById('decodeado').value = cipher.decode(decodificar.value, nOffset2.value);
 });
