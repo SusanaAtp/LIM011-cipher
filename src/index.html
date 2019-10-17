@@ -7,7 +7,8 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href ="fonts/fuentes.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Cairo|Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Maven+Pro|Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -15,18 +16,19 @@
 
 <!-- Primera vista -->
       <div id="bienvenidos" class="bienvenidos">
-          <h>BIENVENIDO</h><br>
-        <img src="images/hermescode.png" class="imagen" /> <br>
-        <p> HERMES CODE, es un aplicativo de mensajería encriptada para mayor protección en la distribución de mensajería
-          instantánea entre nuestros agentes de seguridad. <br>Este es un mensaje de protección de mensajería 
-          debe estar de acuerdo y aceptar la privacidad y veracidad de la políticas de HERMES.</p>
+          <h1>BIENVENIDO</h1><br>
+        <img src="images/hermescode.png" class="imagen" /><br>
+        <div class="texto1">
+        <p1> HERMES CODE, es un aplicativo de mensajería encriptada para mayor protección en la distribución de mensajería instantánea entre nuestros agentes de seguridad.</p1><br><br>
+        <p2>Este es un mensaje de protección de mensajería, usted debe estar de acuerdo y aceptar la privacidad y veracidad de las políticas de HERMES.</p2><br>
+      </div><br>
         <button id="btn1" class="btns">De acuerdo<span class="icon-check ico"></span></button>
       </div>
 <!-- Segunda Vista -->
       <div id="ingresar" class="ocultar ingresar">
-        <h>ID de HERMES:</h>
-        <input type="text" id="persona" name="vacio">
-        <button id="btn2" class="btns">Seguir<span class="icon-man ico"></span></button>
+        <h2>ID de HERMES:</h2><br>
+        <div id="agente"><input type="text" name="vacio" id="persona"></div><br>
+        <button id="btn2" class="btns">Seguir<span class="icon-man ico"></span></button><br>
       </div>
 <!-- Tercera vista -->
       <div class="container2 ocultar" id="container2" >
@@ -35,54 +37,53 @@
 
         <!-- Vista ENCRIPTAR -->
              <div id="encriptar">
-               <header2 class="header">ENCRIPTAR</header2><br>
-               <p2>Pon tu mensaje aquí:</p2><br>
+               <p3>Escribe tu mensaje aquí:</p3><br>
                <textarea id="codetext" class="texto" name="vacio" rows="10" cols="40" placeholder="Escribe aquí"></textarea><br>
 
         <!-- Colocar el offset en codificar-->
-        <p4 class="seguridad">Nivel de Seguridad</p4>
-        <input type="text" id="ofstcode" class="offset" name="vacio"><br>
+        <p3 class="seguridad">Nivel de Seguridad</p3>
+        <input type="text" id="ofstcode" class="offset" name="vacio">
 
         <!-- Botón ENCRIPTAR -->
-               <label>
-               <button id="code" class="btns icon-chevron-right"></button><br>
+               <label> <!--boton encriptar-->
+               <button id="code" class="btnsF icon-chevron-right"></button><br>
                </label>
 
         <!-- Mensaje encriptado -->
-               <p5>Tu mensaje encriptado:</p5><br>
-               <textarea id="codeado" class="texto" name="vacio" rows="10" cols="40" placeholder="Escribe aquí" disabled></textarea><br>
-               <button id="sendMsg" class="btns">ENVIAR MENSAJE</button><br>
+               <p3>Tu mensaje encriptado:</p3><br>
+               <textarea id="codeado" class="texto" name="vacio" rows="10" cols="40" disabled></textarea><br>
+               <button id="sendMsg" class="btns">ENVIAR</button>
              </div>
 
           <!--Vista copiar mensaje -->
             <div id="container3" class="container3 ocultar">
+                <div id="msgCopy">
+                <h class="copy">COPIA ESTE MENSAJE</h><br><br>
+                <p6>Hola, <p6 id="user" class="send"></p6>
+                quiere enviarte un mensaje encriptado en cifra: <p6 id="ftr" class="send"> </p6></p6><br>
 
-                <h class="copy">COPIA ESTE MENSAJE</h>
-                <p6>Hola <div id="user"></div>quiere enviarte un mensaje encriptado en cifra <div id="ftr"></div></p6>
                 <p7>[Copia este mensaje]<div id="msg"></div>[Fin]</p7>
-
+                </div>
             </div> <!--Fin de vista copiar mensaje-->
 
           <!--Vista DESCIFRAR mensaje -->
             <div id="descifrar" class="ocultar">
-              <header1 class="header">DESCIFRAR</header1><br>
-              <p2>Pega tu mensaje aquí:</p2>
-              <textarea id="decodetext" class="texto" name="vacio" rows="10" cols="40" placeholder="Pega aquí"></textarea>
+              <p3>Pega tu mensaje aquí:</p3><br>
+              <textarea id="decodetext" class="texto" name="vacio" rows="10" cols="40" placeholder="Pega aquí"></textarea><br>
 
           <!-- Colocar el offset DECODIFICAR -->
-          <p4 class="seguridad">Nivel de Seguridad</p4>
+          <p3 class="seguridad">Nivel de Seguridad</p3>
           <input type="text" name="vacio" id="ofstdecode" class="offset">
 
 
           <!-- Botón DESCIFRAR -->
               <label>
-                <button id="decode" class="btns icon-chevron-right"></button>
-                <p3>DESCIFRAR</p3>
+                <button id="decode" class="btnsF icon-chevron-right"></button><br>
               </label>
 
           <!-- Mensaje decodificado -->
-              <p5>Tu mensaje encriptado:</p5>
-              <textarea id="decodeado" class="texto" name="vacio" rows="10" cols="40" placeholder="Escribe aquí" disabled></textarea>
+              <p3>Tu mensaje descifrado:</p3><br>
+              <textarea id="decodeado" class="texto" name="vacio" rows="10" cols="40" disabled></textarea><br>
 
             </div> <!-- Fin de DESCIFRAR-->
 

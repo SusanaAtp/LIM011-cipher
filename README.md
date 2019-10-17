@@ -4,13 +4,22 @@ _Toda esa información se perdería y llegaría a manos de personas inescrupulos
 
 Ante este posible problema, se crea **HERMES code**, un aplicativo web con el propósito de enviar mensajería encriptada con total seguridad entre agentes de seguridad. La cual solo es usable entre trabajadores de HERMES, ya que necesita un ingreso con su código personal. La mensajería es totalmente segura y una vez encriptado el mensaje, tiene la opción de copiar y enviarlo vía Whatsapp o correo electrónico.
 
+## APLICACIÓN WEB
+
+  ![web](/images/hermes.png)
+
 ## UX
 ### Usuario
- * i. Trabajadores y agentes de seguridad de HERMES
- * ii. **HERMES code** será usado en mensajes de alta importancia entre los usuarios, brindando una mejor seguridad y confidencialidad para la información. 
- * iii. Foto
- * iv. Agregar la palabra Nivel de Seguridad. En lugar de Cifra
- * v. Prototipo final. 
+ 1. Trabajadores y agentes de seguridad de HERMES
+ 2. **HERMES code** será usado en mensajes de alta importancia entre los usuarios, brindando una mejor seguridad y confidencialidad para la información. 
+ 3. Foto del primer prototipo:
+
+     ![primer](/images/primerproto.jpg)
+ 4. * Agregar la palabra Nivel de Seguridad, en lugar de cifrado. 
+    * No usar términos complejos.
+    * Agregar los eventos a los botones.
+ 5. Prototipo final. 
+    ![final](/images/protofinal.jpg)
 
 
 <!-- # Cifrado César
