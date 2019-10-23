@@ -322,9 +322,9 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 
 ### HTML y CSS
 
-- [X] Uso correcto de HTML semántico.
+- [] Uso correcto de HTML semántico.
 - [X] Uso de selectores de CSS.
-- [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+- [X] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 ### DOM
 
@@ -339,15 +339,13 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 - [ ] Uso de bucles (for | do-while).
 - [X] Uso de funciones (parámetros | argumentos | valor de retorno).
 - [ ] Declaración correcta de variables (const & let).
-- [ ] Uso de ES Modules (import | export).
 
 ### Testing
 - [ ] Testeo de tus funciones.
 
 ### Git y GitHub
-- [ ] Comandos de git (add | commit | pull | status | push).
+- [X] Comandos de git (add | commit | pull | status | push).*
 - [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages).
 
 ### Buenas prácticas de desarrollo
-- [ ] Organizar y dividir el código en módulos (Modularización).
-- [X] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+- [X] Uso de identificadores descriptivos (Nomenclatura | Semántica).*
